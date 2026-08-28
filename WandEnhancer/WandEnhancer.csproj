@@ -75,8 +75,6 @@
         <Compile Include="Converters\ToVisibilityConverter.cs" />
         <Compile Include="Core\Enhancer.cs" />
         <Compile Include="Core\EnhancerConfig.cs" />
-        <Compile Include="Core\Services\LicenseService.cs" />
-        <Compile Include="Core\Security\StringProtector.cs" />
         <Compile Include="Core\Services\LocalizationManager.cs" />
         <Compile Include="Core\Services\SettingsManager.cs" />
         <Compile Include="Models\WeModConfig.cs" />
@@ -96,8 +94,6 @@
         <Compile Include="View\MainWindow\Logs.cs" />
         <Compile Include="View\MainWindow\MainWindow.xaml.cs" />
         <Compile Include="View\MainWindow\MainWindowVm.cs" />
-        <Compile Include="View\LicenseWindow.xaml.cs" />
-        <Compile Include="View\DisclaimerWindow.xaml.cs" />
     
         <Compile Include="View\Popups\PatchVectorsPopup.xaml.cs">
           <DependentUpon>PatchVectorsPopup.xaml</DependentUpon>
@@ -126,8 +122,6 @@
         <Page Include="Style\Styles.xaml" />
         <Page Include="View\Controls\InfoItem.xaml" />
         <Page Include="View\Controls\PopupHost.xaml" />
-        <Page Include="View\LicenseWindow.xaml" />
-        <Page Include="View\DisclaimerWindow.xaml" />
         <Page Include="View\MainWindow\MainWindow.xaml" />
         <Page Include="View\Popups\PatchVectorsPopup.xaml" />
         <Page Include="View\Popups\SettingsPopup.xaml" />

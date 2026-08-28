@@ -59,27 +59,6 @@ namespace WandEnhancer.View.Popups
             MainWindow.MainWindow.Instance.ClosePopup();
         }
 
-        private void OnLogoutClick(object sender, RoutedEventArgs e)
-        {
-            MainWindow.MainWindow.Instance.ClosePopup();
-            LicenseService.ClearCache();
-            DisclaimerWindow.ClearAccepted();
-
-            MainWindow.MainWindow.Instance.Hide();
-
-            var licenseWindow = new LicenseWindow();
-            bool? result = licenseWindow.ShowDialog();
-
-            if (result == true && licenseWindow.IsAuthenticated)
-            {
-                MainWindow.MainWindow.Instance.Show();
-            }
-            else
-            {
-                App.Shutdown();
-            }
-        }
-
         private class LanguageItem
         {
             public CultureInfo Culture { get; set; }

@@ -70,7 +70,6 @@ namespace WandEnhancer.View.MainWindow
         public RelayCommand OpenSettingsCommand { get; }
         public RelayCommand CopyLogsCommand { get; }
         public RelayCommand ExportLogsCommand { get; }
-        public RelayCommand LaunchCommand { get; }
 
         private void OnFolderPathSelection(object obj)
         {
@@ -259,7 +258,6 @@ namespace WandEnhancer.View.MainWindow
             OpenSettingsCommand = new RelayCommand(OnOpenSettings);
             CopyLogsCommand = new RelayCommand(OnCopyLogs);
             ExportLogsCommand = new RelayCommand(OnExportLogs);
-            LaunchCommand = new RelayCommand(OnLaunch);
 
             WeModInfo = Extensions.FindWeMod();
             if (WeModInfo == null)
@@ -268,18 +266,5 @@ namespace WandEnhancer.View.MainWindow
             }
         }
 
-        private void OnLaunch(object param)
-        {
-            if (WeModInfo == null) return;
-            try
-            {
-                System.Diagnostics.Process.Start(WeModInfo.ExecutablePath);
-                Log("Launched Wand.", ELogType.Success);
-            }
-            catch (Exception e)
-            {
-                Log($"Failed to launch: {e.Message}", ELogType.Error);
-            }
-        }
     }
 }
