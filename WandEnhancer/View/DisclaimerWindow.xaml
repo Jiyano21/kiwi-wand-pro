@@ -1,0 +1,171 @@
+<Window x:Class="WandEnhancer.View.DisclaimerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kiwi Wand Pro - Disclaimer"
+        Width="460" Height="490"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        Topmost="True"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+    <Window.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#FF0B0B0C"/>
+        <SolidColorBrush x:Key="CardBrush" Color="#FF111111"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#FFFF4D5A"/>
+        <SolidColorBrush x:Key="TextBrush" Color="#FFCCCCCC"/>
+        <SolidColorBrush x:Key="SubtextBrush" Color="#FF999999"/>
+    </Window.Resources>
+
+    <Border x:Name="WindowBorder" Background="{StaticResource BackgroundBrush}"
+            BorderBrush="#FF222222" BorderThickness="1"
+            CornerRadius="12" SnapsToDevicePixels="True">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Title Bar with Close X -->
+            <Grid Grid.Row="0" Height="36" Background="Transparent">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="16,0,0,0">
+                    <TextBlock Text="Kiwi" Foreground="{StaticResource TextBrush}"
+                               FontSize="13" FontWeight="SemiBold"/>
+                    <TextBlock Text=" Wand" Foreground="{StaticResource AccentBrush}"
+                               FontSize="13" FontWeight="Bold"/>
+                    <TextBlock Text=" Pro" Foreground="{StaticResource TextBrush}"
+                               FontSize="13" FontWeight="SemiBold"/>
+                </StackPanel>
+                <Button x:Name="CloseButton" Content="&#x2715;" Width="36" Height="36"
+                        HorizontalAlignment="Right" Background="Transparent"
+                        Foreground="#FF666666" BorderThickness="0" Cursor="Hand"
+                        FontSize="14" Click="CloseButton_Click"
+                        VerticalContentAlignment="Center" Padding="0"/>
+            </Grid>
+
+            <!-- Content -->
+            <StackPanel Grid.Row="1" Margin="24,0,24,4">
+                <TextBlock Text="Disclaimer" FontSize="17" FontWeight="Bold"
+                           Foreground="{StaticResource TextBrush}"
+                           HorizontalAlignment="Center" Margin="0,0,0,10"/>
+
+                <TextBlock TextWrapping="Wrap" Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,6">
+                    This application is a community-created build based on the original 
+                    <Run FontWeight="SemiBold" Foreground="{StaticResource TextBrush}">Wand Enhancer</Run> by 
+                    <Run FontWeight="SemiBold" Foreground="{StaticResource AccentBrush}">k1tbyte</Run>. 
+                    It has been recompiled with modifications and additional features.
+                </TextBlock>
+
+                <TextBlock Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,6">
+                    <Run FontWeight="SemiBold" Foreground="{StaticResource TextBrush}">Original Repository:</Run>
+                    <LineBreak/>
+                    <Hyperlink NavigateUri="https://github.com/k1tbyte/Wand-Enhancer"
+                               RequestNavigate="Hyperlink_RequestNavigate"
+                               Foreground="#FF3498DB" FontSize="11">
+                        https://github.com/k1tbyte/Wand-Enhancer
+                    </Hyperlink>
+                </TextBlock>
+
+                <TextBlock Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,3">
+                    <Run FontWeight="SemiBold" Foreground="#FFFF3B30">Important:</Run>
+                </TextBlock>
+
+                <TextBlock TextWrapping="Wrap" Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,2">
+                    &#x2022; This software is provided as-is for educational and community purposes only.
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,2">
+                    &#x2022; This project is not affiliated with or endorsed by the original author.
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,2">
+                    &#x2022; This software must NOT be sold, monetized, or commercially distributed.
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,2">
+                    &#x2022; Free community sharing is the only intended use.
+                </TextBlock>
+                <TextBlock TextWrapping="Wrap" Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,6">
+                    &#x2022; The creators of this build are not responsible for any misuse or damage.
+                </TextBlock>
+
+                <!-- Divider -->
+                <Separator Background="#FF222222" Margin="0,2,0,6"/>
+
+                <!-- Credits -->
+                <TextBlock Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,2">
+                    Modified by
+                    <Run FontWeight="SemiBold" Foreground="#FF2ECC71">charlotte-zee</Run>
+                </TextBlock>
+
+                <TextBlock Foreground="{StaticResource SubtextBrush}"
+                           FontSize="11" LineHeight="17" Margin="0,0,0,6">
+                    <Run FontWeight="SemiBold" Foreground="{StaticResource TextBrush}">GitHub:</Run>
+                    <LineBreak/>
+                    <Hyperlink NavigateUri="https://github.com/charlotte-zee"
+                               RequestNavigate="Hyperlink_RequestNavigate"
+                               Foreground="#FF3498DB" FontSize="11">
+                        https://github.com/charlotte-zee
+                    </Hyperlink>
+                </TextBlock>
+
+                <!-- Checkbox -->
+                <CheckBox x:Name="AgreeCheckBox" Cursor="Hand" Margin="0,4,0,0">
+                    <CheckBox.Template>
+                        <ControlTemplate TargetType="CheckBox">
+                            <StackPanel Orientation="Horizontal">
+                                <Border x:Name="Border" Height="17" Width="17"
+                                        CornerRadius="4" Margin="0,0,8,0"
+                                        Background="Transparent" BorderBrush="#FF555555"
+                                        BorderThickness="1">
+                                    <TextBlock x:Name="Text" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                               FontSize="11"/>
+                                </Border>
+                                <ContentPresenter VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsChecked" Value="True">
+                                    <Setter TargetName="Border" Property="Background" Value="#FFFF4D5A"/>
+                                    <Setter TargetName="Border" Property="BorderBrush" Value="#FFFF4D5A"/>
+                                    <Setter TargetName="Text" Property="Text" Value="&#x2713;"/>
+                                    <Setter TargetName="Text" Property="Foreground" Value="White"/>
+                                </Trigger>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="Border" Property="BorderBrush" Value="#FFFF4D5A"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </CheckBox.Template>
+                    <TextBlock Text="Accept" Foreground="#FFFF4D5A" FontWeight="SemiBold" FontSize="12"/>
+                </CheckBox>
+            </StackPanel>
+
+            <!-- Bottom Button -->
+            <StackPanel Grid.Row="2" Margin="24,4,24,16" HorizontalAlignment="Center">
+                <TextBlock x:Name="AcceptWarningText" Text="Accept first!"
+                           Foreground="#FFFF4D5A" FontSize="11" FontWeight="SemiBold"
+                           HorizontalAlignment="Center" Margin="0,0,0,6"
+                           Visibility="Collapsed"/>
+                <Button x:Name="ContinueButton" Height="38" Width="160"
+                        HorizontalAlignment="Center"
+                        Background="{StaticResource AccentBrush}"
+                        Foreground="White" BorderThickness="0"
+                        FontSize="13" FontWeight="SemiBold"
+                        Cursor="Hand"
+                        Click="ContinueButton_Click"
+                        Padding="0" VerticalContentAlignment="Center">
+                    Continue
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
