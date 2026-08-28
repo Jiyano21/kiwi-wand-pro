@@ -10,6 +10,9 @@
 
 ## About
 
+<img width="757" height="535" alt="Screenshot 2026-08-29 052538" src="https://github.com/user-attachments/assets/410cc7d1-e7a4-4041-98ec-425dca0cf73d" />
+
+
 This is a community-modified build of WandEnhancer that includes the latest upstream patches (v1.0.9.4) along with some additional UI tweaks. It maintains full compatibility with Wand (WeMod) and includes all upstream patches and fixes.
 
 ### What's Included
