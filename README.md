@@ -1,8 +1,8 @@
 <div align="center">
 
-# Kiwi Wand Pro
+# WandEnhancer Fork
 
-**A modified build of [WandEnhancer](https://github.com/k1tbyte/Wand-Enhancer) with additional features**
+**A modified build of [WandEnhancer](https://github.com/k1tbyte/Wand-Enhancer) with additional patches and fixes**
 
 </div>
 
@@ -10,21 +10,16 @@
 
 ## About
 
-Kiwi Wand Pro is a community-modified build of WandEnhancer that adds licensing and UI customizations on top of the original feature set. It maintains full compatibility with Wand (WeMod) and includes all upstream patches and fixes.
+This is a community-modified build of WandEnhancer that includes the latest upstream patches (v1.0.9.4) along with some additional UI tweaks. It maintains full compatibility with Wand (WeMod) and includes all upstream patches and fixes.
 
-### What's Different from WandEnhancer?
+### What's Included
 
-| Feature | WandEnhancer | Kiwi Wand Pro |
-|---------|-------------|---------------|
-| Pro activation patches | ✅ | ✅ |
-| Remote Web Panel | ✅ | ✅ |
-| Custom script injection | ✅ | ✅ |
-| DevTools on F12 | ✅ | ✅ |
-| Disable updates | ✅ | ✅ |
-| License key system | ❌ | ✅ |
-| Single-instance enforcement | ❌ | ✅ |
-| Custom UI branding | ❌ | ✅ |
-| Launch button | ❌ | ✅ |
+- All features from WandEnhancer v1.0.9.4
+- MultiFile patch support for patches that appear in multiple JS bundle chunks
+- New `setUserAccountReducer` patch to prevent Pro subscription wipe
+- Fixed process kill loop bug
+- Fixed backup restore to handle `app.asar.unpacked`
+- Custom UI theme and branding
 
 ## Credits
 
@@ -34,14 +29,14 @@ Kiwi Wand Pro is a community-modified build of WandEnhancer that adds licensing 
 
 ## What Does It Do?
 
-Kiwi Wand Pro modifies local Wand (WeMod) client configurations to:
+This tool modifies local Wand (WeMod) client configurations to:
 
-- ✅ Activate Pro features locally
-- ✅ Provide a Remote Web Panel for phone control
-- ✅ Allow custom JavaScript script injection
-- ✅ Open DevTools with F12
-- ✅ Disable automatic updates
-- ✅ Advanced layout and theme customization
+- Activate Pro features locally
+- Provide a Remote Web Panel for phone control
+- Allow custom JavaScript script injection
+- Open DevTools with F12
+- Disable automatic updates
+- Advanced layout and theme customization
 
 ## How to Build
 
@@ -65,7 +60,7 @@ This project is licensed under the [Apache License 2.0](LICENSE.md) — same as 
 
 ```
 Copyright 2024 k1tbyte (original WandEnhancer)
-Copyright 2026 charlotte-zee (Kiwi Wand Pro modifications)
+Copyright 2026 charlotte-zee (modifications)
 ```
 
 You may use, modify, and distribute this software under the terms of the Apache License 2.0. See [LICENSE.md](LICENSE.md) for full details.
