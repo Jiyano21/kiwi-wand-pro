@@ -15,6 +15,8 @@
 
 This is a community-modified build of WandEnhancer that includes the latest upstream patches (v1.0.9.4) along with some additional UI tweaks. It maintains full compatibility with Wand (WeMod) and includes all upstream patches and fixes.
 
+> **Want to learn more about the original project?** Visit the [WandEnhancer repository](https://github.com/k1tbyte/Wand-Enhancer) for full documentation, guides, and the original source code.
+
 ### What's Included
 
 - All features from WandEnhancer v1.0.9.4
