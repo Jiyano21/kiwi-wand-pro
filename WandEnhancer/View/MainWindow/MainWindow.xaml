@@ -7,7 +7,7 @@
         xmlns:controls="clr-namespace:WandEnhancer.View.Controls"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance local:MainWindowVm}"
-        Title="WandEnhancer"
+        Title="Kiwi Wand Pro"
         Height="560" MaxHeight="560"
         Width="780" MaxWidth="780" 
         Opacity="1"
@@ -45,7 +45,7 @@
                                FontWeight="Bold" Opacity="1"
                                VerticalAlignment="Center"
                                FontSize="18" Margin="10 0 0 0">
-                        WandEnhancer
+                        Kiwi <Run Foreground="#FF4D5A">Wand</Run>
                     </TextBlock>
                     <TextBlock x:Name="VersionLabel" VerticalAlignment="Bottom"
                                Opacity="0.7" FontSize="10" Margin="5 0 0 5"

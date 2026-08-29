@@ -1,6 +1,6 @@
 <div align="center">
 
-# WandEnhancer Fork
+# Kiwi Wand Pro
 
 **A modified build of [WandEnhancer](https://github.com/k1tbyte/Wand-Enhancer) with additional patches and fixes**
 
@@ -9,9 +9,6 @@
 > **Disclaimer:** This project is a fork/modification of [WandEnhancer](https://github.com/k1tbyte/Wand-Enhancer) by [k1tbyte](https://github.com/k1tbyte). All original code remains under the [Apache License 2.0](LICENSE.md). This project is not affiliated with or endorsed by the original author.
 
 ## About
-
-<img width="757" height="535" alt="Screenshot 2026-08-29 052538" src="https://github.com/user-attachments/assets/410cc7d1-e7a4-4041-98ec-425dca0cf73d" />
-
 
 This is a community-modified build of WandEnhancer that includes the latest upstream patches (v1.0.9.4) along with some additional UI tweaks. It maintains full compatibility with Wand (WeMod) and includes all upstream patches and fixes.
 
@@ -65,7 +62,7 @@ This project is licensed under the [Apache License 2.0](LICENSE.md) — same as 
 
 ```
 Copyright 2024 k1tbyte (original WandEnhancer)
-Copyright 2026 charlotte-zee (modifications)
+Copyright 2026 charlotte-zee (Kiwi Wand Pro modifications)
 ```
 
 You may use, modify, and distribute this software under the terms of the Apache License 2.0. See [LICENSE.md](LICENSE.md) for full details.
