@@ -45,7 +45,7 @@
                                FontWeight="Bold" Opacity="1"
                                VerticalAlignment="Center"
                                FontSize="18" Margin="10 0 0 0">
-                        Kiwi <Run Foreground="#FF4D5A">Wand</Run>
+                        Kiwi <Run Foreground="#FF4D5A">Wand Pro</Run>
                     </TextBlock>
                     <TextBlock x:Name="VersionLabel" VerticalAlignment="Bottom"
                                Opacity="0.7" FontSize="10" Margin="5 0 0 5"
